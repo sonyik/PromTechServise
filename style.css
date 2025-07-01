@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../PromTechServise/Fonts/Inter-Medium.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+.nav-bar {
+    width: 100%;
+    background-color: #282C32;
+    position: absolute;
+    height: 122px;
+    z-index: 2;
+
+}
+
+.nav-bar__logo {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-bar__button {
+    font: "Inter", sans-serif;
+    color: #FFFFFF;
+    z-index: 1;
+}
