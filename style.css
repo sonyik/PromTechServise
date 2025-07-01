@@ -9,23 +9,42 @@
     font-family: "Inter", sans-serif;
 }
 
-
 .nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
     width: 100%;
     background-color: #282C32;
-    position: absolute;
-    height: 122px;
+    position: fixed;
+    height: 70px;
     z-index: 2;
-
+    justify-content: space-between; 
 }
 
 .nav-bar__logo {
-    position: relative;
+    width: 55px;
+    height: 55px;
     z-index: 1;
+    position: static;
+    transform: none;
+    margin-right: auto; 
+}
+
+.nav-bar__buttons-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
 }
 
 .nav-bar__button {
-    font: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #FFFFFF;
     z-index: 1;
+    text-align: center;
+    margin: 0 25px; 
+    white-space: nowrap; 
+}
+
+.nav-bar__button:last-child {
+    margin-right: 55px;
 }
