@@ -6,45 +6,126 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
+body {
+    padding-top: 70px; /* Отступ для фиксированного навбара */
+    background-color: #282C32;
+    color: #FFFFFF;
+    min-height: 100vh;
+}
+
 .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
-    padding: 0 5px;
+    padding: 0 20px;
     width: 100%;
     background-color: #282C32;
-    position: fixed;
+    filter: drop-shadow(0px 5px 3px rgba(107, 2, 191, 0.25));
     height: 70px;
-    z-index: 2;
-    justify-content: space-between; 
+    z-index: 10;
+    justify-content: space-between;
 }
 
 .nav-bar__logo {
     width: 55px;
     height: 55px;
-    z-index: 1;
-    position: static;
-    transform: none;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .nav-bar__buttons-container {
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    gap: 30px;
+    margin-left: auto;
 }
 
 .nav-bar__button {
-    font-family: "Inter", sans-serif;
+    font-size: 1rem;
     color: #FFFFFF;
-    z-index: 1;
     text-align: center;
-    margin: 0 25px; 
-    white-space: nowrap; 
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.nav-bar__button:last-child {
-    margin-right: 55px;
+.nav-bar__button:hover {
+    color: #a566ff;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: calc(100vh - 70px);
+    width: 100%;
+    position: relative;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 62.5%; 
+    padding: 0 50px; 
+    z-index: 1; 
+}
+
+.main__slogan {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    font-family: "Inter", sans-serif;
+    color: #9998FF;
+}
+
+.main__info {
+    font-size: 1.2rem;
+    color: #E0E0E0;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+
+.main__photo {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    height: 100%; 
+    width: 37.5%; 
+    object-fit: cover; 
+    object-position: center; 
+    z-index: 0; 
+}
+
+
+.main__button {
+    width: 220px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: linear-gradient(90deg, #6B02BF 0%, #8A35CE 100%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(107, 2, 191, 0.4);
+}
+
+.main__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(107, 2, 191, 0.6);
 }
