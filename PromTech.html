@@ -11,9 +11,9 @@
     <header class="header">
         <img class="header__logo" src="images/Logo.svg" alt="Логотип Промтехсервис">  
         <nav class="header__nav">
-            <span class="header__nav-item">Преимущества</span>
-            <span class="header__nav-item">Ассортимент</span>
-            <span class="header__nav-item">Контакты</span>
+            <a href="#features" class="header__nav-item">Преимущества</a>
+            <a href="#products" class="header__nav-item">Ассортимент</a>
+            <a href="#contacts" class="header__nav-item">Контакты</a>
         </nav>
     </header>
 
@@ -30,7 +30,7 @@
         <img class="hero__image" src="images/Main_Photo.svg" alt="Промышленное оборудование">
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <h2 class="features__title">Бескомпромиссное Качество и Надежность</h2>
         <p class="features__description">
             Мы гарантируем высокое качество продукции благодаря строгому контролю и многоэтапной проверке. 
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="products__container">
             <h2 class="products__title">Широкий Ассортимент Продукции</h2>
             <div class="products__grid">
@@ -117,8 +117,8 @@
             </div>
         </div>
     </section>
-    
-    <section class="contacts">
+
+    <section class="contacts" id="contacts">
         <div class="contacts__container">
             <div class="contacts__info">
                 <h2 class="contacts__title">Свяжитесь с Нами Сегодня</h2>
@@ -135,7 +135,7 @@
                     
                     <div class="contacts__item">
                         <span class="contacts__label">Email:</span>
-                        <span class="contacts__text">info@promtehservis12.ru</span>
+                        <a href="mailto:info@promtehservis12.ru" class="contacts__email">info@promtehservis12.ru</a>
                     </div>
                     
                     <div class="contacts__item">
@@ -153,6 +153,30 @@
             <img class="contacts__image" src="images/products.svg" alt="Товары">
         </div>
     </section>
-    
+
+    <footer class="footer">
+    <div class="footer__container">
+        <img class="footer__logo" src="images/Logo.svg" alt="Логотип Промтехсервис">
+        <span class="footer__copyright">© 2025 ПРОМТЕХСЕРВИС. Все права защищены.</span>
+    </div>
+    </footer>
+
+    <div class="modal" id="contactModal">
+    <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2 class="modal__title">Свяжитесь с нами</h2>
+        <form class="modal__form" action="https://formspree.io/f/xvgrygay" method="POST">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="email" name="email" placeholder="Email">
+            <input type="tel" name="phone" placeholder="Телефон*" required>
+            <textarea name="message" placeholder="Ваше сообщение"></textarea>
+            <button type="submit" class="modal__submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<button class="floating-contact-btn" id="floatingContactBtn">
+    <span>Свяжитесь с нами</span>
+</button>
+<script src="script.js"></script>
 </body>
 </html>
