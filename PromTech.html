@@ -4,73 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Промтехсервис</title>
-    <!-- Подключение CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Иконка сайта -->
     <link rel="icon" href="images/Logo.svg" type="image/x-icon">
 </head>
 <body>
+    <header class="header">
+        <img class="header__logo" src="images/Logo.svg" alt="Логотип Промтехсервис">  
+        <nav class="header__nav">
+            <span class="header__nav-item">Преимущества</span>
+            <span class="header__nav-item">Ассортимент</span>
+            <span class="header__nav-item">Контакты</span>
+        </nav>
+    </header>
 
-    <div class="nav-bar">
-        <img class="nav-bar__logo" src="images/Logo.svg">  
-        <div class="nav-bar__buttons-container">
-            <span class="nav-bar__button">Преимущества</span>
-            <span class="nav-bar__button">Ассортимент</span>
-            <span class="nav-bar__button">Контакты</span>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="main__content">
-            <span class="main__slogan">Подшипники и комплектующие для оборудования: Ваш надёжный поставщик</span>
-            <span class="main__info">
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Подшипники и комплектующие для оборудования: Ваш надёжный поставщик</h1>
+            <p class="hero__description">
                 Более 10 лет на рынке промышленных подшипников. 
                 Мы предлагаем широкий ассортимент высококачественных подшипников и 
                 комплектующих для оборудования и любых промышленных нужд.
-            </span>
-            <button class="main__button"><span>Свяжитесь с нами</span></button>
+            </p>
+            <button class="hero__button"><span>Свяжитесь с нами</span></button>
         </div>
-        <img class="main__photo" src="images/Main_Photo.svg">
-    </div>
+        <img class="hero__image" src="images/Main_Photo.svg" alt="Промышленное оборудование">
+    </section>
 
-    <div class="information">
-        <span class="information__slogan">Бескомпромиссное Качество и Надежность</span>
-        <span class="information__description">
+    <section class="features">
+        <h2 class="features__title">Бескомпромиссное Качество и Надежность</h2>
+        <p class="features__description">
             Мы гарантируем высокое качество продукции благодаря строгому контролю и многоэтапной проверке. 
             Наша продукция соответствует международным стандартам. 
-        </span>
-        <div class="information__content">
-            <img class="information__bar" src="images/Information_bar.svg">
-            <span>Контроль качества</span>
-            <span>Многоэтапная проверка продукции.</span>
-        </div>
-        <div class="information__content">
-            <img class="information__bar" src="images/Information_bar.svg">
-            <span>Дополнительные скидки</span>
-            <span>
-                Постоянным клиентам предоставляются 
-                дополнительные скидки.
-            </span>
-        </div>
-        <div class="information__content">
-            <img class="information__bar" src="images/Information_bar.svg">
-            <span>Сертификация</span>
-            <span>
-                Вся продукция сертифицирована по международным и 
-                российским стандартам, подтверждая её соответствие 
-                требованиям.
-            </span>
-        </div>
-        <div class="information__content">
-            <img class="information__bar" src="images/Information_bar.svg">
-            <span>Гарантия</span>
-            <span>
-                Расширенная гарантия до 24 месяцев на всю 
-                продукцию, что подчеркивает нашу уверенность в её 
-                качестве.
-            </span>
-        </div>
-    </div>
+        </p>
+    
+        <div class="features__grid">
+            <div class="feature-card">
+                <img class="feature-card__divider" src="images/Information_bar.svg" alt="">
+                <h3 class="feature-card__title">Контроль качества</h3>
+                <p class="feature-card__description">Многоэтапная проверка продукции.</p>
+            </div>
+        
+            <div class="feature-card">
+                <img class="feature-card__divider" src="images/Information_bar.svg" alt="">
+                <h3 class="feature-card__title">Сертификация</h3>
+                <p class="feature-card__description">
+                    Вся продукция сертифицирована по международным и 
+                    российским стандартам, подтверждая её соответствие 
+                    требованиям.
+                </p>
+            </div>
 
+            <div class="feature-card">
+                <img class="feature-card__divider" src="images/Information_bar.svg" alt="">
+                <h3 class="feature-card__title">Дополнительные скидки</h3>
+                <p class="feature-card__description">
+                    Постоянным клиентам предоставляются 
+                    дополнительные скидки.
+                </p>
+            </div>
+        
+            <div class="feature-card">
+                <img class="feature-card__divider" src="images/Information_bar.svg" alt="">
+                <h3 class="feature-card__title">Гарантия</h3>
+                <p class="feature-card__description">
+                    Расширенная гарантия от 12 месяцев на всю 
+                    продукцию, что подчеркивает нашу уверенность в её 
+                    качестве.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="products__container">
+            <h2 class="products__title">Широкий Ассортимент Продукции</h2>
+            <div class="products__grid">
+                <div class="product-card">
+                    <img class="product-card__icon" src="images/gear.svg" alt="Шестерня">
+                    <h3 class="product-card__title">Подшипники</h3>
+                    <p class="product-card__description">
+                        От стандартных шариковых до специализированных 
+                        сферических и кареток.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-card__icon" src="images/wrench.svg" alt="Гаечный ключ">
+                    <h3 class="product-card__title">Дополнительные компоненты</h3>
+                    <p class="product-card__description">
+                        Сальники, ремни, цепи, муфты, паронит, селикон, текстолит,
+                        техпластины, резина, ленты, резинотехнические изделия.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-card__icon" src="images/net.svg" alt="Сеть">
+                    <h3 class="product-card__title">Известные марки</h3>
+                    <p class="product-card__description">
+                        Мы работаем с такими лидерами рынка, как SKF, FAG, NSK,
+                        NKE, SNR, IKO, DODGE, GMN, TIMKEN, NTN, Koyo.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-card__icon" src="images/snowflake.svg" alt="Снежинка">
+                    <h3 class="product-card__title">Специальные решения</h3>
+                    <p class="product-card__description">
+                        Предлагаем высокотемпературные, коррозионностойкие и 
+                        миниатюрные подшипники для специфических задач.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
